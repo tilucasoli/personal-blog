@@ -35380,6 +35380,7 @@ body {
 .highlight pre {
   background-color: #272b34;
   box-shadow: 0 0px 10px #272b342e;
+  border-radius: 12.5px;
 }
 
 .highlight .hll { background-color: #1a1e2439;
@@ -35624,6 +35625,9 @@ body {
 }
 
 /* Literal.String */
+
+.prose img { border-radius: 12.5px; box-shadow: 0 0px 10px #272b342e;
+}
 
 @media (min-width: 640px) {
   .sm\:prose {
