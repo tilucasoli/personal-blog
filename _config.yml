@@ -1,5 +1,6 @@
-baseurl: "personal-blog"
+baseurl: "/personal-blog"
 title: "Lucas Oliveira's Blog"
+collections_dir: collections
 markdown: kramdown
 highlighter: rouge
 
@@ -19,6 +20,32 @@ sass:
 #   logo_mobile_height: "36px"
 #   logo_mobile_width: "36px"
 
+seo:
+  meta_twitter_site: "@OliDevTech"
+  meta_twitter_creator: "@OliDevTech"
+
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: "images"
+    values:
+      image: true
+  - scope:
+      path: "categories"
+    values:
+      layout: category
+      permalink: /category/:basename/
+
 plugins:
   - jekyll-environment-variables
   - jekyll-postcss
@@ -26,11 +53,6 @@ plugins:
 
 paginate: 3
 paginate_path: /blog/page:num/
-
-collections:
-  posts:
-    output: true
-    permalink: /blog/:path/
 
 exclude:
   - Gemfile
