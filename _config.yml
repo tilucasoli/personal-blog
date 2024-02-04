@@ -1,3 +1,4 @@
 remote_theme: atlantic-theme
 title: Personal Blog
 author: Lucas Oliveira
+baseurl: "/jekyll-atlantic-theme/"
