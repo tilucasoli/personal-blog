@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Jekyll Atlantic Theme
-heading: <em>Jekyll Tailwind</em> Starter Blog
-description: Atlantic is a beautiful Tailwind CSS theme for Jekyll. It shows best practices for using Tailwind with Jekyll.
+title: Mobile Engineer's Explorations
+
+description: "A Mobile Engineer's Explorations: Writing about Flutter(Dart) and Swift."
 
 ---
