@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - hg-pages
+      - gh-pages
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
