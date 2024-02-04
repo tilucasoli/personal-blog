@@ -20,16 +20,27 @@ To this end, its main inspiration is the existing conventions for marking up pla
 
 ### Syntax Highlighting
 
-```js
-$(window).scroll(function () {
-  // this will work when your window scrolled.
-  var scroll = $(window).scrollTop(); //getting the scrolling height of window
-  if (scroll > 100) {
-    $(".header").addClass("header-scrolled");
-  } else {
-    $(".header").removeClass("header-scrolled");
-  }
-});
+```swift
+class ACAudioManager {
+    static let shared = ACAudioManager()
+    var engineQueue: [AVAudioEngine] = []
+    
+    private init(){}
+    
+    public func getEngine() -> AVAudioEngine {
+        if engineQueue.isEmpty {
+            let engine = AVAudioEngine()
+            engineQueue.append(engine)
+            return engine
+        } else {
+            let engine = AVAudioEngine()
+            let lastEngine = engineQueue.last
+            lastEngine?.stop()
+            engineQueue.append(engine)
+            return engine
+        }
+    }
+}
 ```
 
 ## Markdown Flavours
