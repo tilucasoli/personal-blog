@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<!-- {% include heading.html heading=page.title description=page.description align="center" date=page.date %} -->
+
+
+<div class="py-6">
+  <img width="80" height="80" class="rounded-full border-white border-2 mb-6" src="https://pbs.twimg.com/profile_images/1754008973911441408/DkPSU67R_400x400.jpg" alt="Lucas Oliveira"/>
+  <div class="text-md font-manrope font-medium text-gray-400 mb-1">{{ page.date | date_to_long_string }}</div>
+  <h1 class="text-30 font-syne font-semibold mb-4">{{page.title}}</h1>
+  <p class="text-16 font-manrope font-medium text-gray-500 mb-6">{{page.description}}</p>
+
+  {% if page.categories %}
+      <div class=>
+        {% for category in page.categories %}
+          {% include category-badge.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
+</div>
+
+<div class="flex flex-col">
+<img class="rounded mb-6" style="border-radius: 12.5px;" width="700" height="700" src="{{ page.image }}"/>
+
+  <div class="prose">
+    <div class="">
+      {{ content }}
+    </div>
+  </div>
+
+
+</div>
+<div class="w-full rounded-full bg-gray-200 my-8" style=" height: 1px;"></div>
+<p class="text-16 font-manrope font-medium text-gray-500 mb-6">Hope you found this as intriguing as I did. Thanks for reading! 👏🥳 </p>
+<div class="w-full rounded-full bg-gray-200 my-8" style=" height: 1px;"></div>
+<p class="text-16 font-manrope font-medium text-gray-500 mb-6">If you have any questions, don't hesitate to send me a message on my social media accounts.</p>
+<nav class="flex items-center pb-12">
+  <a class="mr-4 text-md font-manrope font-semibold text-gray-500 hover:text-black" href="https://twitter.com/OliDevTech">X</a>
+  <a class="mr-4 text-md font-manrope font-semibold text-gray-500 hover:text-blue-800" href="https://www.linkedin.com/in/lucas-de-oliveira-9075221a2/">LinkedIn</a>
+  <a class="mr-4 text-md font-manrope font-semibold text-gray-500 hover:text-black" href="https://github.com/tilucasoli">Github</a>
+</nav>

@@ -1,0 +1,55 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "assets/css/custom.css";
+@import "assets/css/syntax/monokai";
+
+@layer components {
+  .heading {
+    em,
+    strong {
+      @apply text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-2;
+
+      font-weight: inherit;
+      font-style: normal;
+      font-family: "Manrope", sans-serif; /* Added font family */
+    }
+  }
+  .logo {
+    h2 {
+      strong {
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-2;
+        font-weight: inherit;
+        font-style: normal;
+        font-family: "Manrope", sans-serif; /* Added font family */
+      }
+    }
+  }
+
+  .prose {
+    h2 {
+      font-family: "Manrope", sans-serif;
+      color: #000000;
+    }
+    h1 {
+      font-family: "Manrope", sans-serif;
+      color: #000000;
+    }
+    h3 {
+      font-family: "Manrope", sans-serif;
+      color: #000000;
+    }
+    p {
+      font-family: "Manrope", sans-serif;
+      color: #555b67;
+    }
+    li {
+      font-family: "Manrope", sans-serif;
+      color: #555b67;  
+    }
+  }
+}
