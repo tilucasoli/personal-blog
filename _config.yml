@@ -1,7 +1,5 @@
-baseurl: "/"
-permalink: pretty
-title: "Jekyll Atlantic"
-collections_dir: collections
+baseurl: "personal-blog"
+title: "Lucas Oliveira's Blog"
 markdown: kramdown
 highlighter: rouge
 
@@ -10,7 +8,6 @@ sass:
   style: compact
   precision: 10
 
-google_analytics_id: false # replace with "UA-XXXX"
 
 # logo:
 #   logo_desktop_image: assets/images/logo/logo.svg
@@ -22,11 +19,6 @@ google_analytics_id: false # replace with "UA-XXXX"
 #   logo_mobile_height: "36px"
 #   logo_mobile_width: "36px"
 
-seo:
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
-  meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
-
 plugins:
   - jekyll-environment-variables
   - jekyll-postcss
@@ -34,27 +26,6 @@ plugins:
 
 paginate: 3
 paginate_path: /blog/page:num/
-
-collections:
-  posts:
-    output: true
-    permalink: /blog/:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: "images"
-    values:
-      image: true
-  - scope:
-      path: "categories"
-    values:
-      layout: category
-      permalink: /category/:basename/
 
 exclude:
   - Gemfile
