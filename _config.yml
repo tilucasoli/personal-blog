@@ -27,6 +27,11 @@ plugins:
 paginate: 3
 paginate_path: /blog/page:num/
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
+
 exclude:
   - Gemfile
   - Gemfile.lock
